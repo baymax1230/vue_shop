@@ -1,3 +1,9 @@
+---
+noteId: "532330402c9f11ecbe46079059f7bdd2"
+tags: []
+
+---
+
 # vue_shop
 
 ## Project setup
