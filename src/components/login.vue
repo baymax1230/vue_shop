@@ -214,4 +214,7 @@ button:hover:active {
     transform: translateX(0px);
   }
 }
+.el-form{
+  margin: 0 auto;
+}
 </style>
