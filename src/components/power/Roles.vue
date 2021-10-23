@@ -145,6 +145,7 @@
         :model="editorForm"
         :rules="editorFormRules"
         ref="editorRef"
+      
         label-width="80px"
       >
         <el-form-item label="角色名称" prop="roleName">

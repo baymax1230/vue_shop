@@ -3,6 +3,9 @@ import App from './App.vue'
 import './plugins/element.js'
 import router from './router'
 import './assets/fonts/iconfont.css'
+import TreeTable from 'vue-table-with-tree-grid'
+
+Vue.component('tree-table',TreeTable)
 
 import axios from 'axios'
 // 配置请求根路径

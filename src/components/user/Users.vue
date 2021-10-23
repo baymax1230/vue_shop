@@ -104,6 +104,7 @@
 
       <!-- 分页区 -->
       <el-pagination
+      
         @size-change="handleSizeChange"
         @current-change="handleCurrentChange"
         :current-page="queryInfo.pagenum"
@@ -188,7 +189,7 @@
     <el-dialog
       title="分配角色"
       :visible.sync="setRoleDialogVisible"
-      @close='setRoleDialogClosed'
+     
       width="50%"
     >
       <div>
@@ -196,7 +197,7 @@
         <p>当前的角色:{{ userInfo.role_name }}</p>
         <p>
           分配新角色:
-          <el-select v-model="selRoleId" placeholder="请选择">
+          <el-select v-model="selRoleId" placeholder="请选择" ref='setRoleRef'>
             <el-option
               v-for="item in roleList"
               :key="item.id"
@@ -351,6 +352,7 @@ export default {
     addDialogClosed() {
       this.$refs.addFormRef.resetFields()
     },
+   
     // 点击按钮，添加新用户
     addUser() {
       this.$refs.addFormRef.validate(async vaild => {
